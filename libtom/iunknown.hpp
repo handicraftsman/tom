@@ -5,5 +5,5 @@
 namespace PTK::TOM {
   class IUnknown {
     virtual ~IUnknown();
-  }
+  };
 }
