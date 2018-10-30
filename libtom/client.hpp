@@ -8,10 +8,12 @@ extern "C" {
   #include <unistd.h>
 }
 
-namespace PTK::TOM {
+#include "context.hpp"
+
+namespace TOM {
   class Client {
   public:
-    using LibsMap = std::vector<std::pair<std::string, std::shared_ptr<PTK::TOM::Context>>>;
+    using LibsMap = std::vector<std::pair<std::string, std::shared_ptr<TOM::Context>>>;
     LibsMap libs_map;
     
     Client();

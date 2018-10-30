@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libtom-demo-greeter.so -o libtom-demo-greeter.so CMakeFiles/tom-demo-greeter.dir/greeter/greeter.cpp.o -Wl,-rpath,/home/handicraftsman/Projects/tom/build libtom.so 

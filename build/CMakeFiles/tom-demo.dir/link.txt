@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/tom-demo.dir/demo/main.cpp.o  -o tom-demo -Wl,-rpath,/home/handicraftsman/Projects/tom/build libtom.so 

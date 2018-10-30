@@ -1,15 +1,24 @@
 #include "client.hpp"
 
+#include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <regex>
 
 #include "decls.hpp"
 #include "context.hpp"
 
-namespace PTK::TOM {
+using namespace std::placeholders;
+
+namespace TOM {
   Client::Client() {}
   
-  void Client::load_lib() {
+  Client::~Client() {}
+  
+  void Client::load_lib(const std::string& file) {
+    std::filesystem::path p(file);
+    std::string fname = p.filename();
+    libs_map.push_back(std::make_pair(fname, std::make_shared(new Context(fname, file))));
     //std::pair<std::string>
   }
   
@@ -38,10 +47,6 @@ namespace PTK::TOM {
         load_lib(line);
       }
     } catch (const std::ifstream::failure& e) {} 
-  }
-  
-  ~Client() {
-    
   }
   
   Client client;

@@ -2,7 +2,7 @@
 
 #include "decls.hpp"
 
-namespace PTK::TOM {
+namespace TOM {
   class IUnknown {
     virtual ~IUnknown();
   };

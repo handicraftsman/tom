@@ -1,10 +1,10 @@
 #include <libtom/libtom.hpp>
 
-void reg(PTK::TOM::Context& ctx) {
+void reg(TOM::Context& ctx) {
   //ctx.register_class<Greeter>("Greeter");
 }
 
-void unreg(PTK::TOM::Context& ctx) {
+void unreg(TOM::Context& ctx) {
 
 }
 

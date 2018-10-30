@@ -1,15 +1,23 @@
 #pragma once
 
-namespace PTK::TOM {
+#include <memory>
+#include <string>
+
+namespace TOM {
   class Context;
 }
 
 #include "server.hpp"
 
-namespace PTK::TOM {
+namespace TOM {
   class Context {
   public:
-    friend void PTK::TOM::Server::reg(Context& ctx);
-    friend void PTK::TOM::Server::unreg(Context& ctx);
+    friend void TOM::Server::reg(Context& ctx);
+    friend void TOM::Server::unreg(Context& ctx);
+    
+    Context(const std::string& name, const std::string& path);
+    ~Context();
+    
+    std::shared_ptr<void> handle;
   };
 }

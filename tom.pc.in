@@ -1,0 +1,6 @@
+Name: tom
+Description: A COM-inspired component object model for C++
+Version: @PROJECT_VERSION@
+Requires:
+Cflags: -I@CMAKE_INSTALL_PREFIX@/include/
+Libs: -L@CMAKE_INSTALL_PREFIX@/lib/ -ltom

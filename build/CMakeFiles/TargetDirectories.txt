@@ -1,0 +1,9 @@
+/home/handicraftsman/Projects/tom/build/CMakeFiles/install/strip.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/install/local.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/install.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/tom-demo-greeter.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/tom-demo.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/tom.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/edit_cache.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/rebuild_cache.dir
+/home/handicraftsman/Projects/tom/build/CMakeFiles/list_install_components.dir

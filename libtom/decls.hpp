@@ -4,7 +4,7 @@
 #include <string>
 #include <memory>
 
-namespace PTK::TOM {
+namespace TOM {
   class IUnknown;
   using IUnknownPtr = std::shared_ptr<IUnknown>;
   using ClsId = std::string;
