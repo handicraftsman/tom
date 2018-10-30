@@ -4,7 +4,7 @@ using namespace PPM::Utils;
 
 PPM_PACKAGE(p) {
   p->name("tom");
-  p->version(PPM::Version("v0.1.2"));
+  p->version(PPM::Version("v0.1.3"));
   p->description("A COM-inspired component object model for C++");
   p->github(PPM::GitHub("handicraftsman", "tom"));
   p->license(PPM::License("MIT", "https://github.com/handicraftsman/tom/blob/master/LICENSE.txt"));
@@ -18,6 +18,6 @@ PPM_PACKAGE(p) {
   });
   libtom->cpp_flags(flagcat({
     ("-I" + p->pkg_dir()),
-    "-lc++fs"    
+    "-lstdc++fs"    
   })); 
 }
