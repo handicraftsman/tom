@@ -16,6 +16,7 @@ include_directories(${CMAKE_CURRENT_LIST_DIR})
 file(GLOB tom_SRC ${CMAKE_CURRENT_LIST_DIR}/libtom/*.*pp)
 file(GLOB tom_HDR ${CMAKE_CURRENT_LIST_DIR}/libtom/*.hpp)
 add_library(tom SHARED ${tom_SRC})
+target_link_libraries(tom dl stdc++fs)
 
 add_library(tom-demo-greeter SHARED ${CMAKE_CURRENT_LIST_DIR}/greeter/greeter.cpp)
 target_link_libraries(tom-demo-greeter tom)

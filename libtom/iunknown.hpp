@@ -4,6 +4,7 @@
 
 namespace TOM {
   class IUnknown {
-    virtual ~IUnknown();
+  public:
+    virtual ~IUnknown() {}
   };
 }

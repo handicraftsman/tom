@@ -1,7 +1,1 @@
-/neonbot.json
-/*.o
-/*/*.o
-/*/*/*.o
-/.particlepm
-/dist
-/*.rdb
+/build
