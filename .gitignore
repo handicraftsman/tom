@@ -1,1 +1,6 @@
 /build
+/*.o
+/*/*.o
+/*/*/*.o
+/.particlepm
+/dist
