@@ -1,6 +1,0 @@
-Name: tom
-Description: A COM-inspired component object model for C++
-Version: 0.1.0
-Requires:
-Cflags: -I/usr/include/
-Libs: -L/usr/lib/ -ltom

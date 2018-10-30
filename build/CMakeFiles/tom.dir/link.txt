@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libtom.so -o libtom.so CMakeFiles/tom.dir/libtom/client.cpp.o CMakeFiles/tom.dir/libtom/server.cpp.o 
