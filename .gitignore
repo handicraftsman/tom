@@ -3,4 +3,5 @@
 /*/*.o
 /*/*/*.o
 /.particlepm
+/dumbcpm-*
 /dist

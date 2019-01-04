@@ -1,0 +1,33 @@
+name: tom
+version: 0.1.4
+description: A COM-inspired component object model for C++
+
+git-repo: "https://github.com/handicraftsman/tom"
+git-tag: v0.1.4
+
+targets:
+  tom:
+    type: library
+    sources:
+      - libtom/context.cpp
+      - libtom/manager.cpp
+    cpp: "c++17"
+    flags: "-ldl"
+    after-flags: "-lstdc++fs"
+    include-dirs:
+      - "."
+  tom-demo-greeter:
+    type: library
+    sources:
+      - greeter/greeter.cpp
+    link:
+      - tom/tom
+    cpp: "c++17"
+  tom-demo:
+    type: executable
+    sources:
+      - demo/main.cpp
+    link:
+      - tom/tom
+      - tom/tom-demo-greeter
+    cpp: "c++17"
